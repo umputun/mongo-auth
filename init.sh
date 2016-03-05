@@ -19,6 +19,6 @@ echo "start mongodb wihtout auth"
 chown -R mongodb /data/db
 gosu mongodb mongod --bind_ip=127.0.0.1 "$@"
 
-echo "restarting wiht auth on"
+echo "restarting with auth on"
 sleep 5
 exec gosu mongodb mongod --auth "$@"

@@ -21,4 +21,4 @@ gosu mongodb mongod --bind_ip=127.0.0.1 "$@"
 
 echo "restarting with auth on"
 sleep 5
-exec gosu mongodb mongod --auth "$@"
+exec gosu mongodb mongod --bind_ip=127.0.0.1 --auth "$@"

@@ -1,5 +1,4 @@
 FROM mongo:3
-MAINTAINER Umputun <mongo@umputun.com>
 
 ADD init.sh /init.sh
 RUN \
